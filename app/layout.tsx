@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NeudevCoffee",
-  description: "@Neudev_ Sample",
+  description: "@neudev_",
 };
 
 export default function RootLayout({
