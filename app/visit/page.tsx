@@ -74,11 +74,11 @@ export default function VisitPage() {
                                     </InfoCard>
 
                                     <InfoCard icon={<FiMail size={24} />} title="Email">
-                                        contact@neudevcoffee.com
+                                        contact.neudev@gmail.com
                                     </InfoCard>
 
                                     <InfoCard icon={<FiInstagram size={24} />} title="Social Media">
-                                        @neudevcoffee
+                                        @neudev_
                                     </InfoCard>
                                 </div>
                             </div>
