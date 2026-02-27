@@ -140,19 +140,25 @@ export default function ContactPage() {
                   Contact Information
                 </h2>
 
+                 <a href="https://neudev.web.id"
+                   target="_blank">
                 <Info
                   icon={<FiMapPin size={24} />}
                   title="Visit Us"
                 >
                   Jakarta City, Indonesia
                 </Info>
+                 </a>
 
+                 <a href="https://neudev.web.id"
+                   target="_blank">
                 <Info
                   icon={<FiPhone size={24} />}
                   title="Call Us"
                 >
                   +62 21 1234 5678
                 </Info>
+                 </a>
 
                 <a href="https://neudev.web.id"
                    target="_blank">
