@@ -22,21 +22,21 @@ const Footer = () => {
             </h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://instagram.com/neudev_"
                 aria-label="Instagram"
                 className="hover:text-amber-300 transition-colors"
               >
                 <FiInstagram size={24} />
               </a>
               <a
-                href="#"
+                href="https://neudev.web.id"
                 aria-label="Facebook"
                 className="hover:text-amber-300 transition-colors"
               >
                 <FiFacebook size={24} />
               </a>
               <a
-                href="#"
+                href="https://neudev.web.id"
                 aria-label="Twitter"
                 className="hover:text-amber-300 transition-colors"
               >
