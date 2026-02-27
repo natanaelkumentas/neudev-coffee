@@ -154,12 +154,15 @@ export default function ContactPage() {
                   +62 21 1234 5678
                 </Info>
 
+                <a href="https://neudev.web.id"
+                   target="_blank">
                 <Info
                   icon={<FiMail size={24} />}
                   title="Email Us"
                 >
-                  contact@neudevcoffee.com
+                  contact.neudev@gmail.com
                 </Info>
+                </a>
 
                 <div className="mt-8 bg-amber-50 p-6 rounded-lg">
                   <h3 className="text-xl text-amber-900 mb-3">
