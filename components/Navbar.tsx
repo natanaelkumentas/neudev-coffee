@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <a
-            href="https://www.neudev.web.id" target="_blank"
+            href="https://neudev.web.id" target="_blank"
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <Image
