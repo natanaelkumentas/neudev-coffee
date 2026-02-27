@@ -23,6 +23,7 @@ const Footer = () => {
             <div className="flex gap-4">
               <a
                 href="https://instagram.com/neudev_"
+                target="_blank"
                 aria-label="Instagram"
                 className="hover:text-amber-300 transition-colors"
               >
@@ -30,6 +31,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://neudev.web.id"
+                target="_blank"
                 aria-label="Facebook"
                 className="hover:text-amber-300 transition-colors"
               >
@@ -37,6 +39,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://neudev.web.id"
+                target="_blank"
                 aria-label="Twitter"
                 className="hover:text-amber-300 transition-colors"
               >
