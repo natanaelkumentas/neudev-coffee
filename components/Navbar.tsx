@@ -1,35 +1,34 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { FiMenu, FiX } from "react-icons/fi";
+import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { FiMenu, FiX } from 'react-icons/fi';
 
-export default function Navbar({ navLinks, isActive }) {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/coffee', label: 'Coffee' },
+    { path: '/visit', label: 'Visit' },
+    { path: '/contact', label: 'Contact' },
+  ];
+
+  const isActive = (path: string) => pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-
           {/* Logo */}
-          <a
-            href="https://neudev.web.id"
-            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
-          >
-            <Image
-              src="/neudev.jpeg"
-              alt="NeudevPublisher Logo"
-              width={40}
-              height={40}
-              className="rounded-md"
-              priority
-            />
-            <span className="text-lg font-semibold text-gray-900">
+          <Link href="/">
+            <h1 className="text-2xl font-bold text-amber-900">
               NeudevCoffee
-            </span>
-          </a>
+            </h1>
+          </Link>
 
           {/* Desktop */}
           <div className="hidden md:flex space-x-8">
@@ -39,8 +38,8 @@ export default function Navbar({ navLinks, isActive }) {
                 href={link.path}
                 className={`transition-colors ${
                   isActive(link.path)
-                    ? "text-amber-900 font-semibold"
-                    : "text-gray-700 hover:text-amber-900"
+                    ? 'text-amber-900 font-semibold'
+                    : 'text-gray-700 hover:text-amber-900'
                 }`}
               >
                 {link.label}
@@ -69,8 +68,8 @@ export default function Navbar({ navLinks, isActive }) {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded transition-colors ${
                   isActive(link.path)
-                    ? "bg-amber-100 text-amber-900 font-semibold"
-                    : "text-gray-700 hover:bg-amber-50 hover:text-amber-900"
+                    ? 'bg-amber-100 text-amber-900 font-semibold'
+                    : 'text-gray-700 hover:bg-amber-50 hover:text-amber-900'
                 }`}
               >
                 {link.label}
@@ -81,4 +80,6 @@ export default function Navbar({ navLinks, isActive }) {
       )}
     </nav>
   );
-}
+};
+
+export default Navbar;
